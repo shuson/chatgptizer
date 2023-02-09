@@ -33,5 +33,10 @@ export default [
         "type": "Master Chef",
         "prompt": (text: String) => `I want you to act as a chef master. I will give you a dish name in Chinese and you will find a proper recipe in Chinese and translate it properly in English. My first request is: ${text}${text.slice(-1) === "." ? "" : "."}`,
         "sample": "西红柿炒鸡蛋"
+    },
+    {
+        "type": "夸夸他(她)",
+        "prompt": (text: String) => `我会给你一个中文名字，从长相，性格，经济条件等方面，请用一句话夸夸他(她)， 第一个要让你夸的人是: ${text}${text.slice(-1) === "." ? "" : "."}`,
+        "sample": "王磊"
     }
 ]
