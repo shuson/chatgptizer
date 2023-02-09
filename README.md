@@ -1,5 +1,8 @@
 # [chatgptizer](https://github.com/shuson/chatgptizer)
 
+# Credits
+All credits go to (Awesome ChatGPT Prompts)[https://github.com/f/awesome-chatgpt-prompts] and [Vercel](https://vercel.com)
+
 ## Running Locally
 
 After cloning the repo, go to [OpenAI](https://beta.openai.com/account/api-keys) to make an account and put your API key in a file called `.env`.
