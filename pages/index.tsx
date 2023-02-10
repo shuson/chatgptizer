@@ -87,7 +87,7 @@ const Home: NextPage = () => {
         </div>
 
         <h1 className="sm:text-3xl text-2xl max-w-1xl font-bold text-slate-900">
-          Choose a helper and type your question
+          Choose a role and type your question
         </h1>
         <br />
         {/* <p className="text-slate-500 mt-5">18,167 bios generated so far.</p> */}
@@ -99,7 +99,7 @@ const Home: NextPage = () => {
               height={30}
               alt="1 icon"
             />
-            <p className="text-left font-medium">I want chatGPT act like a :</p>
+            <p className="text-left font-medium">I want chatGPT act like </p>
            <div className="block">
             <DropDown vibe={lang} setVibe={(newLang) => setLang(newLang)} />
           </div>
@@ -107,7 +107,7 @@ const Home: NextPage = () => {
           <div className="flex mb-5 items-center space-x-3">
             <Image src="/2-black.png" width={30} height={30} alt="1 icon" />
             <p className="text-left font-medium">
-            Input what you want to say: 
+            Here is my question: 
             </p>
           </div>
           <textarea
@@ -148,9 +148,9 @@ const Home: NextPage = () => {
               {generatedDescs && (
                 <>
                   <div>
-                    <h2 className="sm:text-4xl text-3xl font-bold text-slate-900 mx-auto">
+                    <h3 className="sm:text-4xl text-3xl font-bold text-slate-900 mx-auto">
                       Check it out
-                    </h2>
+                    </h3>
                   </div>
                   <div className="space-y-8 flex flex-col items-center justify-center max-w-xl mx-auto  whitespace-pre-wrap">
 
