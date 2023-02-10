@@ -16,7 +16,7 @@ const Home: NextPage = () => {
   const [loading, setLoading] = useState(false);
   const [desc, setDesc] = useState("");
   const [sample, setSample] = useState("");
-  const [lang, setLang] = useState<VibeType>("Itself");
+  const [lang, setLang] = useState<VibeType>("OIT Expert");
   const [generatedDescs, setGeneratedDescs] = useState<string>("");
 
   let prompt = prompts.find((obj) => obj.type == lang)?.prompt(desc)
