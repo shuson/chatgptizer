@@ -1,5 +1,10 @@
 export default [
     {
+        "type": "Itself",
+        "prompt": (text: String) => `${text}${text.slice(-1) === "." ? "" : "."}`,
+        "sample": "Anything you like"
+    },
+    {
         "type": "Password Generator",
         "prompt": (text: String) => `I want you to act as a password generator for individuals in need of a secure password. I will provide you with a number that represents the length of required password. Your task is to generate a complex password with the length I provided. Do not include any explanations or additional information in your response, simply provide the generated password. For example, if the input is 9, your response should be a password such as "b5%t9Dgfa", which length is 9, my first request is: ${text}${text.slice(-1) === "." ? "" : "."}`,
         "sample": "length is 8"
@@ -36,7 +41,7 @@ export default [
     },
     {
         "type": "夸夸他(她)",
-        "prompt": (text: String) => `我会给你一个中文名字，从长相，性格，经济条件等方面，请用一句话夸夸他(她)， 第一个要让你夸的人是: ${text}${text.slice(-1) === "." ? "" : "."}`,
+        "prompt": (text: String) => `我会给你一个中文名字，从长相，性格，经济能力等方面，请用一句话夸夸他(她)， 第一个要让你夸的人是: ${text}${text.slice(-1) === "." ? "" : "."}`,
         "sample": "王磊"
     }
 ]
