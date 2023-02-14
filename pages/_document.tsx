@@ -6,13 +6,14 @@ class MyDocument extends Document {
       <Html lang="en">
         <Head>
           <link rel="icon" href="/favicon.ico" />
+          <meta property="title" content="Answer me" />
           <meta
             name="description"
-            content="Generate specific answer from chatGPT"
+            content="Generate specific answer from chatGPT with pre-defined persona"
           />
           <meta
             property="og:description"
-            content="Generate specific answer from chatGPT"
+            content="Generate specific answer from chatGPT with pre-defined persona"
           />
           <meta property="og:title" content="Answer me" />
         </Head>

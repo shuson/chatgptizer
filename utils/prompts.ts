@@ -10,6 +10,11 @@ export default [
         "sample": "length is 8"
     },
     {
+        "type": "Alternatives Finder",
+        "prompt": (text: String) => `I will give you a name of a product or a tool, and you will describe what it is generally, and please find the alternatives to it and split them into two parts, free ones and paid ones. My first request is: ${text}${text.slice(-1) === "." ? "" : "."}`,
+        "sample": "Tableau"
+    },
+    {
         "type": "IT Expert",
         "prompt": (text: String) => ` I want you act like a general IT expert, you will be provided IT problem description, you will do diagnose and provide solutions. Some questions provided to you might not be IT related, please ignore them and reply that you have no knowlege of non-IT related questions. My first request is: ${text}${text.slice(-1) === "." ? "" : "."}`,
         "sample": "I forget office 365 account password"
